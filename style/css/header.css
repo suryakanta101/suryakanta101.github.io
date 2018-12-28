@@ -1,0 +1,59 @@
+header {
+  height: 56px;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  background-color: #224099;
+}
+header nav.toolbar {
+  padding: 0.6em;
+  text-align: center;
+}
+header nav.toolbar .toolbar-title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 6px;
+}
+header nav.toolbar img {
+  height: 28px;
+}
+header .mini-cart {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  height: 35px;
+  width: 35px;
+  display: block;
+}
+header .mini-cart a {
+  position: relative;
+  display: block;
+}
+header .mini-cart a .mini-cart-count {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #ffd300;
+  position: absolute;
+  top: 1px;
+  right: -3px;
+  text-align: center;
+  color: #1e2254;
+  font-size: 8px;
+  vertical-align: middle;
+  align-items: center;
+  font-weight: 500;
+  display: inline-grid;
+}
+header .mini-cart .mini-cart-icon {
+  background-image: url(../../img/action/Icon-cart.svg) !important;
+  background-position: 50% 100% !important;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 35px;
+  background-size: 25px;
+  display: block;
+}

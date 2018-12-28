@@ -1,0 +1,261 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  touch-action: manipulation;
+  word-wrap: break-word;
+  text-size-adjust: none;
+  user-select: none;
+  font-family: "Roboto";
+}
+a {
+  background-color: transparent;
+  text-decoration: none !important;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("../../fonts/roboto-light.woff2") format("woff2"), url("../../fonts/roboto-light.woff") format("woff"), url("../../fonts/roboto-light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../../fonts/roboto-regular.woff2") format("woff2"), url("../../fonts/roboto-regular.woff") format("woff"), url("../../fonts/roboto-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../../fonts/roboto-medium.woff2") format("woff2"), url("../../fonts/roboto-medium.woff") format("woff"), url("../../fonts/roboto-medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../../fonts/roboto-bold.woff2") format("woff2"), url("../../fonts/roboto-bold.woff") format("woff"), url("../../fonts/roboto-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Noto Sans"), local("Noto-Sans-Regular"), url("../../fonts/noto-sans-regular.woff") format("woff"), url("../../fonts/noto-sans-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans"), local("Noto-Sans-Regular"), url("../../fonts/noto-sans-regular.woff") format("woff"), url("../../fonts/noto-sans-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../../fonts/noto-sans-bold.woff") format("woff"), url("../../fonts/noto-sans-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans Bold"), local("Noto-Sans-Bold"), url("../../fonts/noto-sans-bold.woff") format("woff"), url("../../fonts/noto-sans-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url("../../fonts/roboto-ligh.ttf") format("ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Ionicons";
+  src: url("../../fonts/ionicons.woff2?v=3.0.0-alpha.3") format("woff2"), url("../../fonts/ionicons.woff?v=3.0.0-alpha.3") format("woff"), url("../../fonts/ionicons.ttf?v=3.0.0-alpha.3") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto-medium";
+  src: url("../../fonts/roboto-medium.ttf") format("ttf");
+  font-weight: 200;
+}
+audio,
+canvas,
+progress,
+video {
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+b,
+strong {
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 1px;
+  border-width: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+label,
+input,
+select,
+textarea {
+  font-family: inherit;
+  line-height: normal;
+}
+textarea {
+  overflow: auto;
+  height: auto;
+  font: inherit;
+  color: inherit;
+}
+textarea::-webkit-input-placeholder {
+  padding-left: 2px;
+}
+textarea::-ms-input-placeholder {
+  padding-left: 2px;
+}
+textarea::placeholder {
+  padding-left: 2px;
+}
+form,
+input,
+optgroup,
+select {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+a,
+a div,
+a span,
+a icon,
+a label,
+button,
+button div,
+button span,
+button icon,
+button label,
+[tappable],
+[tappable] div,
+[tappable] span,
+[tappable] icon,
+[tappable] label,
+input,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+a label,
+button label {
+  pointer-events: none;
+}
+button {
+  border: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  line-height: 1;
+  text-transform: none;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+[tappable] {
+  cursor: pointer;
+}
+a[disabled],
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+.hide,
+[hidden],
+template {
+  display: none !important;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+:focus,
+:active {
+  outline: none;
+}
+.focus-outline :focus {
+  outline: thin dotted;
+  outline-offset: -1px;
+}
+.focus-outline button:focus,
+.focus-outline [button]:focus {
+  border-color: #51a7e8;
+  outline: 2px solid #51a7e8;
+  -webkit-box-shadow: 0 0 8px 1px #51a7e8;
+  box-shadow: 0 0 8px 1px #51a7e8;
+}

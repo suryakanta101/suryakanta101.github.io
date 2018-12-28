@@ -1,0 +1,91 @@
+footer{
+    bottom: 0;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    opacity: 1;
+    height: 50px;
+    background: #f8f8f8;
+    .row{
+        padding-top: 3px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+        margin: 0 auto;
+        border-top: 1px solid #eee;
+        .footertab{
+            text-align: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            height: 100%;
+        }
+        .col-half-offset{
+            margin-left:4.166666667%
+        }
+        a.active{
+            text-decoration: none;
+            text-transform: none;
+            .tab-button-icon{
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                height: 28px;
+                display: block;
+                background-size: 30px;
+                &.tabhome{
+                    background-image: url(../../img/action/icon-home-active-tabBar.svg);
+                }
+                &.tabfuncard{
+                    background-image: url(../../img/action/icon-funcard-active-tabBar.svg);
+                }
+                &.tabaccount{
+                    background-image: url(../../img/action/icon-account-active-tabBar.svg);
+                }
+                &.tabbooknow{
+                    background-image: url(../../img/action/icon-booknow-active-tabBar.svg);
+                }
+                &.tablocation{
+                    background-image: url(../../img/action/Icon-form-location.svg);
+                    background-size: 26px;
+                }
+            }
+        }
+        a:not(.active){
+            span{
+                color: rgba(60, 60, 60, 0.7);
+            }
+            .tab-button-icon{
+                background-position: 50% 100%;
+                background-repeat: no-repeat;
+                height: 28px;
+                display: block;
+                background-size: 30px;
+                &.tabhome{
+                    background-image: url(../../img/action/icon-home-tabBar.svg);
+                }
+                &.tabfuncard{
+                    background-image: url(../../img/action/icon-funcard-tabBar.svg);
+                }
+                &.tabaccount{
+                    background-image: url(../../img/action/icon-account-tabBar.svg);
+                }
+                &.tabbooknow{
+                    background-image: url(../../img/action/icon-booknow-tabBar.svg);
+                }
+                &.tablocation{
+                    background-image: url(../../img/action/Icon-form-location.svg);
+                    background-size: 26px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    footer{
+        .row{
+            width: 70%;
+        }
+    }
+}
